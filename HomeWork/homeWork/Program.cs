@@ -1,0 +1,403 @@
+﻿
+// ==================================== H O M E W O R K - 1 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng kiriting: ");
+//            var str = Console.ReadLine();
+//            Console.WriteLine(helloName(str));
+//        }
+//        public static string helloName(string s)
+//        {
+//            return $"Hello {s}!";
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 2 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+//            Console.WriteLine("Stirng 2 kiriting: ");
+//            var s2 = Console.ReadLine();
+//            Console.WriteLine(helloName(s1, s2));
+//        }
+//        public static string helloName(string s1, string s2)
+//        {
+//            return s1 + s2 + s2 + s1;
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 3 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+//            Console.WriteLine("Stirng 2 kiriting: ");
+//            var s2 = Console.ReadLine();
+//            Console.WriteLine(helloName(s1, s2));
+//        }
+//        public static string helloName(string s1, string s2)
+//        {
+//            return s1.Substring(0, s1.Length / 2) + s2 + s1.Substring(s1.Length / 2);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 4 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Length > 2 ? s1.Substring(s1.Length - 2) + s1.Substring(s1.Length - 2) + s1.Substring(s1.Length - 2) : s1 + s1 + s1;
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 5 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Length > 2 ? s1.Substring(0, 2) + s1.Substring(0, 2) + s1.Substring(0, 2) : s1 + s1 + s1;
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 6 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Length % 2 == 0 ? s1.Substring(0, s1.Length / 2) : "Uzunligi juft emas!";
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 7 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Length > 3 ? s1.Substring(1, s1.Length - 2) : "Uzunligi 4 dan kichik xolatda malumot chiqara olmaysiz!";
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 8 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s2 = Console.ReadLine();
+//            Console.WriteLine(helloName(s1, s2));
+//        }
+//        public static string helloName(string s1, string s2)
+//        {
+//            return s2.Length > s1.Length ? s1 + s2 + s1 : s2 + s1 + s2;
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 9 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s2 = Console.ReadLine();
+//            Console.WriteLine(helloName(s1, s2));
+//        }
+//        public static string helloName(string s1, string s2)
+//        {
+//            return s1.Length > 0 && s2.Length > 0 ? s1.Substring(1) + s2.Substring(1) : "string uzunligi 1dan kam!";
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 10 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Substring(2) + s1.Substring(0, 2);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 11 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1, true));
+//            Console.WriteLine(helloName(s1, false));
+//            Console.WriteLine(helloName(s1, true));
+//        }
+//        public static string helloName(string s1, bool TF)
+//        {
+//            return TF ? s1.Substring(0, 1) : s1.Substring(s1.Length - 1);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 12 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1, 1));
+//            Console.WriteLine(helloName(s1, 2));
+//            Console.WriteLine(helloName(s1, 3));
+//        }
+//        public static string helloName(string s1, int n)
+//        {
+//            return s1.Substring(0, n) + s1.Substring(s1.Length - n);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 13 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Length % 2 == 1 ? s1.Substring(s1.Length / 2 - 1, 3) : "Juft uzulikdagi Text yozdingiz!";
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 14 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+//            Console.WriteLine("Stirng 2 kiriting: ");
+//            var s2 = Console.ReadLine();
+//            Console.WriteLine(helloName(s1, s2));
+
+//        }
+//        public static string helloName(string s1, string s2)
+//        {
+//            return s1.Substring(s1.Length - 1) == s2.Substring(0, 1) ? s1.Substring(0, s1.Length - 1) + s2 : s1 + s2;
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 15 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+
+//        }
+//        public static string helloName(string s1)
+//        {
+//            var LastString = s1.Substring(s1.Length - 1);
+//            var secondString = s1.Substring(s1.Length - 2);
+//            return s1.Substring(0, s1.Length - 2) + LastString + secondString.Substring(0, 1);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 16 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+
+//        }
+//        public static string helloName(string s1)
+//        {
+//            var indexRed = s1.IndexOf("red");
+//            var indexBlue = s1.IndexOf("blue");
+//            return indexBlue == 0 ? s1.Substring(0, 4) : indexRed == 0 ? s1.Substring(0, 3) : "";
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 17 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+
+//        }
+//        public static bool helloName(string s1)
+//        {
+//            return s1.Substring(0, 2) == s1.Substring(s1.Length - 2);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 18 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+//            Console.WriteLine("Stirng 2 kiriting: ");
+//            var s2 = Console.ReadLine();
+//            Console.WriteLine(helloName(s1, s2));
+
+//        }
+//        public static string helloName(string s1, string s2)
+//        {
+//            return s1.Length > s2.Length ? s1.Substring(s1.Length - s2.Length) + s2 : s1 + s2.Substring(s2.Length - s1.Length);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 19 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Substring(0, 2) == "ab" ? s1
+//                : s1.Substring(0, 1) == "a" ? s1.Substring(0, 1) + s1.Substring(2) : s1.Substring(1, 1) == "b" ? s1.Substring(1) : s1.Substring(2);
+//        }
+//    }
+//}
+
+// ==================================== H O M E W O R K - 20 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Stirng 1 kiriting: ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(helloName(s1));
+
+//        }
+//        public static string helloName(string s1)
+//        {
+//            return s1.Substring(0, 1) == "x" && s1.Substring(s1.Length - 1) == "x" ? s1.Substring(1, s1.Length - 2) :
+//                s1.Substring(s1.Length - 1) == "x" ? s1.Substring(0, s1.Length - 1) : s1.Substring(0, 1) == "x" ? s1.Substring(1) : s1;
+//        }
+//    }
+//}
