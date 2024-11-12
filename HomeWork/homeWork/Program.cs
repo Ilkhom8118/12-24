@@ -792,6 +792,94 @@
 //    }
 //}
 
+//==================================== H O M E W O R K - 3.1 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine(CountXY("fez day"));
+//            Console.WriteLine(CountXY("day fez"));
+//            Console.WriteLine(CountXY("!!day--yaz!!"));
+//        }
+//        public static int CountXY(string str)
+//        {
+//            var spaceSign = 0;
+//            str += spaceSign;
+
+//            var counter = 0;
+
+//            for (var i = 0; i < str.Length - 1; i++)
+//            {
+//                if (str[i] == 'z' || str[i] == 'Z' || str[i] == 'y' || str[i] == 'Y')
+//                {
+//                    if (Char.IsLetter(str[i + 1]) is false)
+//                    {
+//                        counter++;
+//                    }
+//                }
+//            }
+//            return counter;
+//        }
+
+//    }
+//}
+
+//==================================== H O M E W O R K - 3.3 ====================================
+namespace homeWork
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(EqualIsNot("This is not"));
+            Console.WriteLine(EqualIsNot("This is notnot"));
+            Console.WriteLine(EqualIsNot("noisxxnotyynotxisi"));
+        }
+        public static bool EqualIsNot(string s1)
+        {
+            string[] arrr1 = s1.Split("is");
+            string[] arr2 = s1.Split("not");
+
+            return arrr1.Length == arr2.Length;
+        }
+    }
+}
+
+//equalIsNot("This is not") → false
+//equalIsNot("This is notnot") → true
+//equalIsNot("noisxxnotyynotxisi") → true
+
+//==================================== H O M E W O R K - 3.4 ====================================
+//namespace homeWork
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine(EqualIsNot("This is not"));
+//            Console.WriteLine(EqualIsNot("This is notnot"));
+//            Console.WriteLine(EqualIsNot("noisxxnotyynotxisi"));
+//        }
+//        public static bool EqualIsNot(string s1)
+//        {
+//            var countNot = 0;
+//            var countIs = 0;
+//            for (var i = 0; i < s1.Length - 2; i++)
+//            {
+//                if (s1.Substring(i, 3) == "not")
+//                {
+//                    countNot++;
+//                }
+//                if (s1.Substring(i, 2) == "is")
+//                {
+//                    countIs++;
+//                }
+//            }
 
 
-
+//            return countIs == countNot;
+//        }
+//    }
+//}
