@@ -1,0 +1,15 @@
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\bin\Debug\net8.0\ListMassive.exe
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\bin\Debug\net8.0\ListMassive.deps.json
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\bin\Debug\net8.0\ListMassive.runtimeconfig.json
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\bin\Debug\net8.0\ListMassive.dll
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\bin\Debug\net8.0\ListMassive.pdb
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.AssemblyInfoInputs.cache
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.AssemblyInfo.cs
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.csproj.CoreCompileInputs.cache
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.sourcelink.json
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.dll
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\refint\ListMassive.dll
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.pdb
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ListMassive.genruntimeconfig.cache
+C:\Users\zeeyoD\Desktop\.NET\12-24\Lesson 4\ListMassive\obj\Debug\net8.0\ref\ListMassive.dll

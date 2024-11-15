@@ -1,0 +1,602 @@
+// ============================= STRING - 1 =============================
+
+//namespace ExamplesAndTasks1;
+//class Program
+//{
+//    static void Main()
+//    {
+//        string str1 = "Salom";
+//        string str2 = "Dunyo";
+
+//        string natija = Qoshish(str1, str2);
+//        Console.WriteLine(natija); 
+//    }
+
+//    public static string Qoshish(string str1, string str2)
+//    {
+//        string newStr1 = str1.Substring(1);
+//        string newStr2 = str2.Substring(1);
+
+//        return newStr1 + newStr2;
+//    }
+//}
+
+// ============================= STRING - 2 =============================
+
+//namespace ExamplesAndTasks1;
+//class Program
+//{
+//    static void Main()
+//    {
+
+//        Console.WriteLine("Stringni kiriting! ");
+//        var str = "acervsjava";
+//        var result = JavaAcer(str);
+//        Console.WriteLine(result);
+
+//    }
+//    public static bool JavaAcer(string str)
+//    {
+//        var str1 = "java";
+//        var str2 = "acer";
+//        int countJava = 0;
+//        int countAcer = 0;
+//        for (int i = 0; i < str.Length; i++)
+//        {
+//            if (str.Substring(i, str1.Length - 4) == "java")
+//            {
+//                countJava++;
+//            }
+//            else if (str.Substring(i, str2.Length - 4) == "acer")
+//            {
+//                countAcer++;
+//            }
+//        }
+
+//        return countAcer == countJava;
+//    }
+
+//}
+
+
+// ============================= STRING - 3 =============================
+
+//Str satr berilgan. Shu satrdagi har “PDP” so’zidan keyin “Academy” ni
+//qo’shib qaytaruvchi funksiya tuzing agar “PDP” bo’lmasa satrni o’zi qaytsin.
+
+//namespace ExamplesAndTasks1;
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.Write("1 chi stringni kiriting! ");
+//        var str1 = Console.ReadLine();
+
+
+//        Console.WriteLine(task_3(str1));
+//        Console.WriteLine();
+
+//    }
+
+//    /// ---------- S T R I N G L A R ---------- ///
+
+
+//    // 2 - MISOL
+//    public static string task_3(string str)
+//    {
+//        var temp = "";
+//        var str1 = "PDP";
+//        var str2 = "Academy";
+//        for (int i = 0; i <= str.Length - str1.Length; i++)
+//        {
+//            temp = str.Substring(i, str1.Length);
+//            if (temp == str1)
+//            {
+//                str = str.Insert(i + str1.Length, str2);
+//                i += str2.Length;
+//            }
+//        }
+//        return str;
+//    }
+//}
+
+
+// ============================= STRING - 4 =============================
+
+//Str satr ichida “flutter” so’zi necha marta
+//qatnashganini chiqaruvchi funksiya tuzing
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String kiriting! ");
+//        var str = Console.ReadLine();
+//        Console.WriteLine(Flutter(str));
+//    }
+//    public static int Flutter(string s)
+//    {
+//        var count = 0;
+//        var s1 = "flutter";
+//        for (var i = 0; i <= s.Length - s1.Length; i++)
+//        {
+//            if (s.Substring(i, s1.Length) == s1)
+//            {
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
+//}
+
+// ============================= STRING - 5 =============================
+
+
+//Str satri va n soni berilgan. str satrini birinchi
+//n ta belgisini n marta chiqaruvchi funksiya tuzing.(str.size()>n)
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String kiriting! ");
+//        var str = Console.ReadLine();
+//        Console.WriteLine("Raqam kiriting! ");
+//        var n = Convert.ToInt32(Console.ReadLine());
+//        Console.WriteLine(Flutter(str, n));
+//    }
+//    public static string Flutter(string s, int n)
+//    {
+//        var str = s.Substring(0, n);
+//        var str1 = "";
+//        for (var i = 0; i < str.Length; i++)
+//        {
+//            str1 += str;
+//        }
+//        return str1;
+//    }
+//}
+
+
+// ============================= STRING - 6 =============================
+
+
+//.  Berilgan str(str.size()>=5) satrning boshidagi
+//n ta va oxiridagi m ta belgidan tashkil topgan
+//yangi satr hosil qiluvchi protsedura(void) tuzing.
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s = Console.ReadLine();
+//        Console.WriteLine("N kiriting! ");
+//        var n = Convert.ToInt32(Console.ReadLine());
+//        Console.WriteLine("M kiriting! ");
+//        var m = Convert.ToInt32(Console.ReadLine());
+//        Console.WriteLine(Flutter(s, n, m));
+//    }
+//    public static string Flutter(string s1, int n, int m)
+//    {
+
+//        return s1.Substring(0, n) + s1.Substring(s1.Length - m, m);
+//    }
+//}
+
+// ============================= STRING - 8 =============================
+
+
+//. Uzunligi kamida 2 ga teng bo’lgan satr berilgan.
+//Shu satrni oxirgi 2 ta harfini 3 marta yonma-yon
+//qilib natijani qaytaradigan funksiya tuzing.
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s = Console.ReadLine();
+//        Console.WriteLine(Flutter(s));
+//    }
+//    public static string Flutter(string s1)
+//    {
+//        var str = s1.Substring(s1.Length - 2);
+//        return str + str + str;
+//    }
+//}
+
+
+// ============================= STRING - 9 =============================
+
+
+//2 ta S1 va S2 satr berilgan S1 satrni ichida S2
+//satr uchrasa birinchi uchragan S2 satrni
+//o’chirib qaytaruvchi funksiya tuzing.
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s2 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1, s2));
+//    }
+//    public static string Flutter(string s1, string s2)
+//    {
+//        var i = s1.IndexOf(s2);
+//        return i == 0 ? s1.Substring(i + s2.Length) : s1.Substring(0, i) + s1.Substring(i + s2.Length);
+
+//    }
+//}
+
+
+// ============================= STRING - 10 =============================
+
+
+//Str satr berilgan. Agar shu satr “PDP”
+//bilan tugagan bo’lsa “ishonamiz” so’zini,
+//aks holda “bizga qo’shiling” ni qaytaruvchi protsedura (void) tuzing.  .
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s1 = Console.ReadLine();
+
+//        Flutter(s1);
+//    }
+//    public static void Flutter(string s1)
+//    {
+//        if (s1.Substring(s1.Length - 3) == "PDP") Console.WriteLine("Ishonamiz");
+//        else Console.WriteLine("Bizga qo’shiling");
+
+//    }
+//}
+
+
+// ============================= STRING - 11 =============================
+
+
+//Str satr berilgan. Agar Str satrini uzunligi toq bo’lsa
+//o’rtadagi 1 ta belgini, aks holda 2 ta belgisini
+//o’chirib qaytaruvchi funksiya tuzing.
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s1 = Console.ReadLine();
+
+//        Console.WriteLine(Flutter(s1));
+//    }
+//    public static string Flutter(string s1)
+//    {
+//        return s1.Length % 2 == 1 ? s1.Substring(0, s1.Length / 2) + s1.Substring(s1.Length / 2 + 1)
+//            : s1.Substring(0, s1.Length / 2 - 1) + s1.Substring(s1.Length / 2 + 1);
+
+//    }
+//}
+
+// ============================= STRING - 12 =============================
+
+
+//2 ta S1 va S2 satr berilgan. shu satrlardan biri ikkinchisi bilan tugasa,
+//true qaytaruvchi funksiya tuzing. Bunda katta-kichik harflar farqlanmaydi. 
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s2 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1, s2));
+//    }
+//    public static bool Flutter(string s1, string s2)
+//    {
+//        var str1 = s1.Substring(s1.Length - 3).ToUpper();
+//        var str2 = s2.ToUpper();
+
+//        return str1 == str2;
+//    }
+//}
+
+// ============================= STRING - 13 =============================
+
+
+//Str satr berilgan satrda uchragan probel(‘ ’)larni o’rniga “probel” so’zini qo’yuvchi funksiya tuzing.  
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s1 = Console.ReadLine();
+
+//        Console.WriteLine(Flutter(s1));
+//    }
+//    public static string Flutter(string s1)
+//    {
+//        var str = "";
+//        for (int i = 0; i < s1.Length; i++)
+//        {
+//            if (s1.Substring(i, 1) == " ")
+//            {
+//                str += "probel";
+//            }
+//            else
+//            {
+//                str += s1[i];
+//            }
+//        }
+//        return str;
+
+
+//    }
+//}
+
+// ============================= STRING - 14 =============================
+
+
+// Kamida 2 ta harfdan iborat satr berilgan. Shu satrni boshidagi va oxiridagi harflarisiz natijani qaytaradigan funksiya tuzing.    
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.WriteLine("String 1 kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1));
+//    }
+//    public static string Flutter(string s1)
+//    {
+//        return s1.Length > 2 ? s1.Substring(1, s1.Length - 2) : s1;
+//    }
+//}
+
+
+// ============================= STRING - 15 =============================
+
+
+// str satr berilgan. str satrda “mobil” so’zi nechanchi indexda uchrashini aniqlab
+// qiymat sifatida qaytaruvchi funksiya tuzing. Agar so’z topilmasa -1 natija qaytsin.
+// Qidirish funksiyalaridan foydalanilmasin.    
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.WriteLine("String kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1));
+//    }
+//    public static int Flutter(string s1)
+//    {
+//        var count = 0;
+//        var str = "mobile";
+//        for (var i = 0; i <= s1.Length - str.Length; i++)
+//        {
+//            if (s1.Substring(i, str.Length) == "mobile")
+//            {
+//                return i;
+//            }
+
+//        }
+//        return -1;
+//    }
+//}
+
+// ============================= STRING - 16 =============================
+
+
+// Str satr berilgan. (Str.size() > 5) Shu satrdagi dastlabki
+// 2 ta belgi bilan oxirgi 2 ta belgisini o’rnini almashtirib
+// qaytaruvchi funksiya tuzing.    
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.WriteLine("String kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1));
+//    }
+//    public static string Flutter(string s1)
+//    {
+//        return s1.Length >= 5 ? s1.Substring(s1.Length - 2) + s1.Substring(2, s1.Length - 2 - 2) + s1.Substring(0, 2) : " ";
+//    }
+//}
+
+// ============================= STRING - 17 =============================
+
+
+//S1 va S2 satr berilgan. S2 satrida birinchi uchragan S1 satrni o’chiradigan funksiya tuzing.    
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.WriteLine("String kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine("String kiriting! ");
+//        var s2 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1, s2));
+//    }
+//    public static string Flutter(string s1, string s2)
+//    {
+//        var i = s1.IndexOf(s2);
+//        return s1.Substring(0, i) + s1.Substring(i + s2.Length);
+//    }
+//}
+
+
+// ============================= STRING - 18 =============================
+
+
+//  2 ta S1 va S2 satr berilgan S1 satrda S2 satri necha marta qatnashganini chiqaruvchi funksiya tuzing.    
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.WriteLine("String kiriting! ");
+//        var s1 = Console.ReadLine();
+//        Console.WriteLine("String kiriting! ");
+//        var s2 = Console.ReadLine();
+//        Console.WriteLine(Flutter(s1, s2));
+//    }
+//    public static int Flutter(string s1, string s2)
+//    {
+//        var count = 0;
+//        for (var i = 0; i < s1.Length - s2.Length; i++)
+//        {
+//            if (s1.Substring(i, s2.Length) == s2)
+//            {
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
+//}
+
+// ============================= STRING - 19 =============================
+
+
+//  Juft uzunlikdagi satr berilgan. Shu satrni birinchi yarmini qaytaruvchi funksiya tuzing     
+
+//namespace ExamplesAndTasks;
+
+//internal class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.WriteLine("String kiriting! ");
+//        var s1 = Console.ReadLine();
+
+//        Console.WriteLine(Flutter(s1));
+//    }
+//    public static string Flutter(string s1)
+//    {
+//        return s1.Length % 2 == 0 ? s1.Substring(0, s1.Length / 2) : "Toq uzunlikdagi satr kiritdingiz";
+//    }
+//}
+
+// ============================= STRING - 20 =============================
+
+
+// Berilgan satrda kichik harfdan keyn katta harf kelsa,  kichik harfdan keyin probel qo’yib chiquvchi funksiya tuzing.   
+
+//namespace ExamplesAndTasks
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("String kiriting! ");
+//            var s1 = Console.ReadLine();
+
+//            Console.WriteLine(Flutter(s1));
+//        }
+
+//        public static string Flutter(string s1)
+//        {
+//            var result = ""; 
+
+//            for (int i = 0; i < s1.Length; i++)
+//            {
+//                result += s1[i];
+
+//                if ( char.IsLower(s1[i]) && char.IsUpper(s1[i + 1]))
+//                {
+//                    result += " "; // Probel qo'shamiz
+//                }
+//            }
+//            return result;
+//        }
+//    }
+//}
+
+// ============================= STRING - 21 =============================
+
+//Toq uzunlikdagi satr berilgan. Satrni o’rtasidagi 3 ta harfdan iborat yangi satrni qaytaradigan funksiya tuzing.
+
+
+//namespace ExamplesAndTasks
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.Write("Text kiriting: ");
+//            var text = Console.ReadLine();
+//            Console.Write("Index number kiriting: ");
+//            var numberIndex = Convert.ToInt32(Console.ReadLine());
+//            text = text.Substring(0, numberIndex) + text.Substring(text.Length - numberIndex);
+//            Console.WriteLine(text);
+//        }
+//    }
+//}
+
+
+//namespace ExamplesAndTasks
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            var stringValue = "Hi      students       how   are    you";
+//            for (var i = 0; i < stringValue.Length; i++)
+//            {
+//                if (stringValue[i] == ' ' && stringValue[i + 1] != ' ')
+//                {
+//                    stringValue = stringValue.Replace("  ", " ");
+//                }
+//            }
+//            Console.WriteLine(stringValue);
+//        }
+//    }
+//}
