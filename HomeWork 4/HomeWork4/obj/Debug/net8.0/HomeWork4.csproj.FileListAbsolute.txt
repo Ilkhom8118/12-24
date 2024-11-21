@@ -1,0 +1,15 @@
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\bin\Debug\net8.0\HomeWork4.exe
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\bin\Debug\net8.0\HomeWork4.deps.json
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\bin\Debug\net8.0\HomeWork4.runtimeconfig.json
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\bin\Debug\net8.0\HomeWork4.dll
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\bin\Debug\net8.0\HomeWork4.pdb
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.AssemblyInfoInputs.cache
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.AssemblyInfo.cs
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.csproj.CoreCompileInputs.cache
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.sourcelink.json
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.dll
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\refint\HomeWork4.dll
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.pdb
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\HomeWork4.genruntimeconfig.cache
+C:\Users\zeeyoD\Desktop\.NET\12-24\HomeWork 4\HomeWork4\obj\Debug\net8.0\ref\HomeWork4.dll

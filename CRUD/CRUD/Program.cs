@@ -20,7 +20,6 @@
                 Console.Write("Choose: ");
                 var option = int.Parse(Console.ReadLine());
 
-
                 if (option == 1)
                 {
                     Console.Clear();
@@ -28,19 +27,23 @@
                 }
                 else if (option == 2)
                 {
+                    Console.Clear();
                     InfoDelete();
 
                 }
                 else if (option == 3)
                 {
+                    Console.Clear();
                     IndexUpdate();
                 }
                 else if (option == 4)
                 {
+                    Console.Clear();
                     UpDateServer();
                 }
                 else if (option == 5)
                 {
+                    Console.Clear();
                     DisplayInfo();
                 }
                 Console.ReadKey();
@@ -72,7 +75,7 @@
             }
             Console.Write("Manzilni kiritin: ");
             string adress = Console.ReadLine();
-            str += "Ism: " + name + ", Yosh: " + age + ", Telefon raqam: "
+            str += "Ism: " + name + ", Yosh: " + age + ", Telefon: "
                 + phoneNumber + ", Manzil: " + adress;
             ServerHouse.Add(str);
             Console.WriteLine("\nMa'lumotingiz muvafaqiyatli yuklandi.");
@@ -101,44 +104,54 @@
             {
                 Console.WriteLine($"{i + 1}. {ServerHouse[i]}.");
             }
-            Console.WriteLine("\nEnter tugmasini bosing!");
         }
         public static void UpDateServer()
         {
             DisplayInfo();
             Console.Write("Qaysi qatordagi malumotni o'zgartirmoqchisiz: ");
             var index = int.Parse(Console.ReadLine()) - 1;
-            Console.WriteLine("1. Ism familiya: ");
-            Console.WriteLine("2. Yosh: ");
-            Console.WriteLine("3. Telefon raqamni: ");
-            Console.WriteLine("4. Manzilni kiritin: ");
+            Console.WriteLine("\n1. Ism almashtirmoqchimisiz: ");
+            Console.WriteLine("2. Yosh almashtirmoqchimisiz: ");
+            Console.WriteLine("3. Telefon raqamni almashtirmoqchimisiz: ");
+            Console.WriteLine("4. Manzilni almashtirmoqchimisiz: \n");
+            Console.Write("Raqam kiriting: ");
             var choise = int.Parse(Console.ReadLine());
+            Console.WriteLine();
             string[] nameIndex = ServerHouse[index].Split(",");
             switch (choise)
             {
                 case 1:
-                    Console.Write("Ism familiya kiriting: ");
+                    Console.Write("Ism kiriting: ");
                     var newNameSurname = Console.ReadLine();
                     nameIndex[0] = nameIndex[0].Replace(nameIndex[0].Substring(5), newNameSurname);
                     ServerHouse[index] = string.Join(",", nameIndex);
+
+                    Console.WriteLine("\nMalumotingiz muvafaqiyatli yuklandi.");
+                    Console.WriteLine("Iltimos Enter tugmasini bosing.");
                     break;
                 case 2:
                     Console.Write("Yoshni kiriting: ");
                     var newAge = Console.ReadLine();
                     nameIndex[1] = nameIndex[1].Replace(nameIndex[1].Substring(7), newAge);
                     ServerHouse[index] = string.Join(",", nameIndex);
+                    Console.WriteLine("\nMalumotingiz muvafaqiyatli yuklandi.");
+                    Console.WriteLine("Iltimos Enter tugmasini bosing.");
                     break;
                 case 3:
                     Console.Write("Yangi telefon raqam kiriting: ");
                     var newPhoneNuber = Console.ReadLine();
                     nameIndex[2] = nameIndex[2].Replace(nameIndex[2].Substring(10), newPhoneNuber);
                     ServerHouse[index] = string.Join(",", nameIndex);
+                    Console.WriteLine("\nMalumotingiz muvafaqiyatli yuklandi.");
+                    Console.WriteLine("Iltimos Enter tugmasini bosing.");
                     break;
                 case 4:
-                    Console.Write("Yangi telefon raqam kiriting: ");
+                    Console.Write("Yangi manzilni kiriting: ");
                     var newAdress = Console.ReadLine();
                     nameIndex[3] = nameIndex[3].Replace(nameIndex[3].Substring(9), newAdress);
                     ServerHouse[index] = string.Join(",", nameIndex);
+                    Console.WriteLine("\nMalumotingiz muvafaqiyatli yuklandi.");
+                    Console.WriteLine("Iltimos Enter tugmasini bosing.");
                     break;
             }
         }
@@ -187,6 +200,20 @@
                 return false;
             }
             return true;
+        }
+        public static void Sreach()
+        {
+
+            Console.WriteLine("\n1. Ism almashtirmoqchimisiz: ");
+            Console.WriteLine("2. Yosh almashtirmoqchimisiz: ");
+            Console.WriteLine("3. Telefon raqamni almashtirmoqchimisiz: ");
+            Console.WriteLine("4. Manzilni almashtirmoqchimisiz: \n");
+            Console.Write("Raqam kiriting: ");
+            var choise = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            string[] nameIndex = ServerHouse.FindAll(name => name.StartsWith("Ism"){
+
+            });
         }
     }
 }
